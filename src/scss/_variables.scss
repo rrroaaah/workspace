@@ -1,1 +1,114 @@
-$primary: #10B7B6;
+// space
+
+$spacers: (
+  0: 0,
+  1: 0.5rem,
+  2: 1rem,
+  3: 1.5rem,
+  4: 2rem,
+  5: 2.5rem,
+  6: 3rem,
+  7: 3.5rem,
+  8: 4rem,
+  9: 4.5rem,
+  10: 5rem,
+  11: 5.5rem,
+  12: 6rem,
+  13: 6.5rem,
+  14: 7rem,
+  15: 7.5rem,
+  16: 8rem,
+  17: 8.5rem,
+  18: 9rem,
+  19: 9.5rem,
+  20: 10rem,
+  21: 10.5rem,
+  22: 11rem,
+  23: 11.5rem,
+  24: 12rem,
+  25: 12.5rem
+);
+
+
+
+// colors
+
+$primary: #05080D;
+$primary-light: #10B7B6;
+$primary-dark: #127578;
+$on-primary: #F4F5F7;
+$secondary: #647182;
+$secondary-light: #9BA2AC;
+$secondary-dark: #0A3035;
+$on-secondary: #F4F5F7;
+$text: #F4F5F7;
+$title-text: #10B7B6;
+$specific: #FFFFFF;
+$button-text: #F4F5F7;
+$button: #10B7B6;
+$secondary-text: #A2A7AF;
+$secondary-title-text: #127578;
+$border: #647182;
+$divider: #647182;
+$shadow: rgba(0, 0, 0, 0.35);
+$icon: #10B7B6;
+$menu: #05080D;
+$card: #0A1119;
+$background: #05080D;
+$section: #0A3035;
+$hover: #127578;
+$button-hover: #127578;
+$text-hover: #FFFFFF;
+$button-text-hover: #FFFFFF;
+$field: #101820;
+$border-field: #647182;
+$title-text-field: #A2A7AF;
+$text-field: #F4F5F7;
+$warning: #FFB800;
+$inactive: #647182;
+$green: #10B981;
+$red: #F04444;
+$black: #000000;
+
+
+
+// theme-colors
+
+$theme-colors :(
+  "primary" : $primary,
+  "primary-light" : $primary-light,
+  "primary-dark" : $primary-dark,
+  "on-primary" : $on-primary,
+  "secondary" : $secondary,
+  "secondary-light" : $secondary-light,
+  "secondary-dark" : $secondary-dark,
+  "on-secondary" : $on-secondary,
+  "text" : $text,
+  "title-text" : $title-text,
+  "specific" : $specific,
+  "button-text" : $button-text,
+  "button" : $button,
+  "secondary-text" : $secondary-text,
+  "secondary-title-text" : $secondary-title-text,
+  "border" : $border,
+  "divider" : $divider,
+  "shadow" : $shadow,
+  "icon" : $icon,
+  "menu" : $menu,
+  "card" : $card,
+  "background" : $background,
+  "section" : $section,
+  "hover" : $hover,
+  "button-hover" : $button-hover,
+  "text-hover" : $text-hover,
+  "button-text-hover" : $button-text-hover,
+  "field" : $field,
+  "border-field" : $border-field,
+  "title-text-field" : $title-text-field,
+  "text-field" : $text-field,
+  "warning" : $warning,
+  "inactive" : $inactive,
+  "green" : $green,
+  "red" : $red,
+  "black" : $black
+  );
