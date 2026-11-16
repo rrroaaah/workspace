@@ -1,29 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="fa" dir="rtl" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مژده ولی | برنامه‌نویس و توسعه‌دهنده وب</title>
+  <meta name="description" content="صفحه شخصی مژده ولی، برنامه‌نویس و توسعه‌دهنده وب">
+  <link rel="icon" href="/assets/media/logo.svg">
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem('theme')||'dark'}catch(e){}</script>
+  <script type="module" src="/assets/js/script.js"></script>
 </head>
-
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M19 12H5m6-6-6 6 6 6"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M5 10v9M5 6v.01M10 19v-9m0 4a4 4 0 0 1 8 0v5"/></symbol>
+  <symbol id="i-telegram" viewBox="0 0 24 24"><path d="M21 3 3 10.5l6.5 2.5L12 20l3-5 5 3z"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5v.01"/></symbol>
+</svg>
 
-    <div class="container text-center">
-        <div class="row">
-            <div class="col text-danger">
-                Column
-            </div>
-            <div class="col text-primary-light">
-                Column
-            </div>
-            <div class="col text-icon">
-                Column
-            </div>
+<header class="site-header">
+  <div class="container nav">
+    <button class="icon-btn" id="themeBtn" type="button" aria-label="تغییر تم"><svg class="ico"><use href="#i-moon"/></svg></button>
+    <button class="icon-btn nav-toggle" id="menuBtn" type="button" aria-label="منو" aria-expanded="false" aria-controls="menu"><svg class="ico"><use href="#i-menu"/></svg></button>
+    <nav class="menu" id="menu" aria-label="منوی اصلی">
+      <ul>
+        <li><a class="active" href="#home">خانه</a></li>
+        <li><a href="#about">درباره من</a></li>
+        <li><a href="#projects">نمونه‌کارها</a></li>
+        <li><a href="#services">خدمات</a></li>
+        <li><a href="#contact">تماس با من</a></li>
+      </ul>
+    </nav>
+    <a class="brand" href="#home" aria-label="مژده ولی"><img src="/assets/media/logo.svg" alt="" width="44" height="36"></a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 hero__text">
+          <p class="hero__hi">سلام! من</p>
+          <h1 class="hero__name">مژده <span>ولی</span></h1>
+          <h2 class="hero__role">برنامه‌نویس و توسعه‌دهنده وب</h2>
+          <p class="hero__desc">با کدنویسی، ایده‌ها رو به واقعیت تبدیل می‌کنم</p>
+          <a class="btn-outline" href="#projects"><svg class="ico"><use href="#i-arrow"/></svg>مشاهده نمونه‌کارها</a>
+          <ul class="socials" aria-label="شبکه‌های اجتماعی">
+            <li><a href="#" aria-label="گیت‌هاب"><svg class="ico"><use href="#i-github"/></svg></a></li>
+            <li><a href="#" aria-label="لینکدین"><svg class="ico"><use href="#i-linkedin"/></svg></a></li>
+            <li><a href="#" aria-label="تلگرام"><svg class="ico"><use href="#i-telegram"/></svg></a></li>
+            <li><a href="#" aria-label="اینستاگرام"><svg class="ico"><use href="#i-instagram"/></svg></a></li>
+          </ul>
         </div>
+        <div class="col-lg-6 hero__visual-col">
+          <div class="visual">
+            <div class="orbit"></div>
+            <div class="photo" id="tilt"><img src="/assets/media/profile-placeholder.svg" alt="عکس پروفایل" width="300" height="400"></div>
+            <i class="spark"></i><i class="dot"></i>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <script type="module" src="/assets/js/script.js"></script>
+    <a class="scroll" href="#about" aria-label="ادامه صفحه"><span></span></a>
+  </section>
+</main>
 </body>
-
 </html>
